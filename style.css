@@ -1,0 +1,922 @@
+/*----------------------------------------------------------------------------------
+
+	Template Name: Dental Website
+	Template URL: http://www.abm.com
+	Description: Dental Website
+	Author: Md. Majidul Islam
+	Author URL: http://www.ab-majid.info
+	License: GNU General Public 
+	Version: 2020.0.1
+-----------------------------------------------------------------------------------
+  ---------------------------- INDEX ----------------------------
+
+	1.  CSS Reset--------------------------------------------- 35 
+  2.  Typography-------------------------------------------- 54 
+	3.  Ashraf Top Nav Area----------------------------------- 59
+	4.  Ashraf Main Menu Area--------------------------------- 73
+	5.  Ashraf Header Slider Area----------------------------- 119
+  6.  Nurunnobi Client Area--------------------------------- 199
+	7.  Arafat Doctors Area----------------------------------- 209
+	8.  Mehedi Services Area---------------------------------- 258
+	9.  Mehedi Pricing Area----------------------------------- 284
+	10. Arafat Client Area------------------------------------ 359
+  11. Nurunnobi Footer Area--------------------------------- 416
+  12. Arafat Status Bar Area-------------------------------- 546
+  13. Arafat Drop Down Nav Area----------------------------- 587
+  14. Arafat Header Area------------------------------------ 655
+  15. Nurunnabi Not Found Area------------------------------ 700
+  16. Arafat Search Area------------------------------------ 737
+  17. Mobile Responsive Design------------------------------ 762
+  18. Tablet Responsive Design------------------------------ 856
+  19. Desktop Responsive Design----------------------------- 866
+-----------------------------------------------------------------------------------*/
+
+/************************ 1. CSS Reset ************************/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a,
+p,
+ul {
+  margin: 0;
+  text-decoration: none;
+}
+
+/************************ 2. Typography ************************/
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+/************************ 3. Ashraf Top Nav Section Area ************************/
+.top-nav .icon {
+  font-size: 28px;
+  color: #f69267;
+  padding-right: 10px;
+}
+.top-nav .big {
+  font-size: 14px;
+}
+.top-nav .small-text {
+  font-size: 12px;
+  color: #a0a0a0;
+}
+
+/************************ 4. Ashraf Main Menu Section Area ************************/
+.menu {
+  background-color: #00cce1;
+}
+.menu .menu-items ul li a {
+  color: white;
+  padding: 5px 0px;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 1s;
+}
+.menu .menu-items ul li a:hover {
+  color: #f69267;
+}
+.menu .menu-bar {
+  text-align: center;
+  display: none;
+}
+.menu .menu-bar a {
+  color: white;
+  font-size: 20px;
+}
+.menu #close {
+  display: none;
+}
+.menu .parallelogram {
+  transform: skew(170deg);
+  background: #f69267;
+}
+
+.menu .appointment {
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  font-style: normal;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+.menu .appointment:hover {
+  text-decoration: none;
+  cursor: pointer;
+  color: black !important;
+}
+
+/************************ 5. Ashraf header Slider Area ************************/
+.header-slider {
+  background-image: url("images/background.png");
+  background-size: cover;
+  position: relative;
+}
+.header-slider .h4 {
+  background-color: #00cce1;
+  color: white;
+  font-weight: bold;
+}
+.header-slider .h3 {
+  background-color: #f69165;
+  color: white;
+  font-weight: bold;
+}
+.header-slider .btn-learn {
+  background-color: #f69165;
+  color: white;
+  border: none;
+  padding: 5px 15px;
+  font-weight: bold;
+  font-size: 12px;
+}
+
+.header-slider .btn-book {
+  background-color: #00cce1;
+  color: white;
+  border: none;
+  padding: 5px 15px;
+  font-weight: bold;
+  font-size: 12px;
+}
+.header-slider .col {
+  text-align: right;
+}
+.header-slider .control {
+  position: relative;
+}
+
+.header-slider .myControls li {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 99;
+  color: white;
+  list-style: none;
+}
+
+.header-slider .myControls .prev {
+  background-color: #00cce1;
+  padding: 2px 7px;
+  left: 0;
+  position: absolute;
+  border-radius: 1px;
+}
+.header-slider .myControls .next {
+  background-color: #f69165;
+  padding: 2px 7px;
+  right: 0;
+  position: absolute;
+  border-radius: 1px;
+}
+.header-slider .tns-nav {
+  text-align: center;
+}
+
+.header-slider .tns-nav button {
+  border-radius: 50%;
+  height: 10px;
+  width: 10px;
+  border: none;
+  background: #c6ccd0;
+  margin-left: 5px;
+}
+
+.header-slider .tns-nav .tns-nav-active {
+  background: #f69165;
+}
+
+/************************ 6. Nurunnabi Agency Section Area ************************/
+.agency-section .text,
+.agency-section .content p {
+  color: #848789;
+}
+.agency-section .content p {
+  font-size: 13px;
+  line-height: 160%;
+}
+
+/************************ 7. Arafat Doctors Section Area ************************/
+.doctors-section {
+  background-color: #f9f9f9;
+}
+.doctors-section .doctors-profile {
+  overflow: hidden;
+}
+.doctors-section .image-box {
+  position: relative;
+  transition: all 1s;
+}
+.doctors-section .content-box {
+  background-color: #fff;
+  border-bottom: 2px solid #00cce1;
+}
+.doctors-section .red-background {
+  background-color: #f69165;
+}
+.doctors-section .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: none;
+}
+.doctors-section .social {
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+.doctors-section .social-icon {
+  transition: all 1s;
+}
+.doctors-section .social-icon:hover {
+  background-color: #f69165;
+}
+.doctors-section .image-box:hover .overlay {
+  display: block;
+}
+.doctors-section .image-box:hover + .content-box {
+  border-color: #f69165;
+}
+
+/************************ 8. Mehedi Services Section Area ************************/
+.services-section .service-box {
+  border: 3px solid #ebebeb;
+  box-shadow: inset 0px 1px 3px #ebebeb;
+  transition: 1s;
+}
+.services-section .content-box p {
+  font-size: 14px;
+  color: #707070;
+}
+.services-section .content-box a {
+  font-size: 14px;
+  color: #707070;
+}
+.services-section .service-box:hover {
+  border: 3px solid #f69165;
+}
+.services-section .service-box:hover div h5 {
+  color: #f69165;
+  transition: 1s;
+}
+.services-section .service-box:hover .content-box a {
+  color: #f69165;
+  transition: 1s;
+}
+
+/************************ 9. Mehedi Pricing Section Area ************************/
+.pricing-section {
+  background-color: #f9f9f9;
+}
+.pricing-section .pricing-box {
+  border: 5px solid #ffffff;
+  box-shadow: inset 0px 1px 3px #fff;
+  transition: 1s all;
+}
+.pricing-section .pricing_first h5 {
+  color: #00cce1;
+  font-size: 22px;
+}
+.pricing-section .pricing_first p {
+  font-size: 12px;
+}
+.pricing-section .pricing_second {
+  background-color: white;
+}
+.pricing-section .pricing_second h3 {
+  color: #00cce1;
+  font-weight: 900;
+}
+.pricing-section .pricing_second p {
+  color: #00cce1;
+  font-size: 10px;
+  font-weight: 900;
+}
+.pricing-section .pricing_last ul li {
+  list-style: none;
+}
+.pricing-section .pricing_last ul li a {
+  text-decoration: none;
+}
+.pricing-section .pricing_last a {
+  font-size: 14px;
+  line-height: 2;
+}
+.pricing-section .pricing_last button {
+  background: #00cce1;
+  margin-top: 15px;
+  border: none;
+  cursor: pointer;
+  font-size: 12px;
+}
+.pricing-section .pricing-box:hover {
+  border: 5px solid #f69165;
+}
+.pricing-section .pricing-box:hover h5 {
+  color: #f69165;
+  transition: 1s;
+}
+.pricing-section .pricing-box:hover .pricing_second {
+  background-color: #f69165;
+  transition: 1s;
+}
+.pricing-section .pricing-box:hover .pricing_second h3 {
+  color: white;
+  transition: 1s;
+}
+.pricing-section .pricing-box:hover .pricing_second p {
+  color: white;
+  transition: 1s;
+}
+.pricing-section .pricing-box:hover button {
+  background-color: #f69165;
+  transition: 1s;
+}
+.pricing-section .pricing_box:hover .pricing_first {
+  background-color: white;
+}
+.pricing-section .pricing_box:hover .pricing_last {
+  background-color: white;
+}
+
+/************************ 10. Arafat Client Section Area ************************/
+.client-section {
+  background: url("images/happy_client_bg.png");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  min-height: 300px;
+  position: relative;
+  z-index: 1;
+}
+.client-section::after {
+  content: "";
+  display: block;
+  clear: both;
+  background-color: rgba(0, 0, 0, 0.75);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+}
+.client-section .control {
+  position: relative;
+}
+.client-section .sliderControls li {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 15px;
+  z-index: 99;
+  color: white;
+  list-style: none;
+  border-radius: 10px;
+}
+.client-section .sliderControls .prev {
+  left: 10px;
+  background-color: #00cce1;
+  padding: 2px 5px;
+  border-radius: 1px;
+  transition: all 1s;
+}
+.client-section .sliderControls .next {
+  right: 10px;
+  background-color: #00cce1;
+  padding: 2px 5px;
+  border-radius: 1px;
+  transition: all 1s;
+}
+.client-section .client-slider {
+  display: flex;
+  align-items: center;
+}
+.client-section .active-control {
+  background-color: #f69165 !important;
+}
+
+/************************ 11. Nurunnabi Footer Section Area ************************/
+.footer {
+  background-color: #1b1b1b;
+  background: url("images/footer-map.png");
+}
+.footer .left_content .left_upper_text {
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 20px;
+  padding-top: 40px;
+  padding-bottom: 15px;
+  color: #a7a6a6;
+}
+.footer .contact_area a {
+  margin-top: 20px;
+}
+.footer .contact_area .call_icon_1 {
+  color: #13d6e8;
+  font-size: 25px;
+  padding-top: 10px;
+}
+.footer .contact_area .call_icon_2 {
+  color: #13d6e8;
+  font-size: 25px;
+  padding-top: 10px;
+  transform: rotate(-45deg);
+}
+.footer .contact_area span {
+  font-family: "Roboto", sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 20px;
+  padding-top: 30px;
+  color: #a7a6a6;
+}
+.footer .middle_content h2 {
+  font-family: "Roboto", sans-serif;
+  font-size: 35px;
+  font-weight: bold;
+  padding-bottom: 20px;
+  color: white;
+}
+.footer .card {
+  background: transparent;
+}
+.footer .card-body .card-text {
+  font-family: "Roboto", sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 20px;
+  color: #a7a6a6;
+}
+.footer .card-body .card-text:first-letter {
+  text-transform: capitalize;
+}
+.footer .card-body .card_text {
+  padding-top: 7px;
+}
+.footer .card-body .card_text .text_muted {
+  font-family: "Roboto", sans-serif;
+  color: #706666;
+  font-size: 10px;
+}
+.footer .right_content h2 {
+  font-family: "Roboto", sans-serif;
+  font-size: 35px;
+  font-weight: bold;
+  color: white;
+}
+.footer .right_content .right_upper_text {
+  font-family: "Roboto", sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 20px;
+  padding-top: 40px;
+  color: #a7a6a6;
+}
+.footer .footer_input {
+  background: none;
+  border: 1px solid #464444;
+  padding: 10px 15px;
+}
+.footer .input-group .footer_input {
+  color: white;
+}
+.footer .footer_btn {
+  background-color: #f69165;
+  border: 1px solid #464444;
+  color: white;
+  padding: 10px 12px;
+  font-weight: 400;
+}
+.footer .social_text h3 {
+  color: white;
+  font-size: 22px;
+  margin-right: 5px;
+}
+.footer .social_icon ul {
+  display: flex;
+  /* justify-content: center; */
+  list-style: none;
+  /* padding-left: 22px; */
+}
+.footer .social_icon ul li a {
+  color: white;
+  background-color: #3c3b3b;
+  padding: 6px 8px;
+  margin: 5px;
+  font-size: 20px;
+  transition: 0.7s;
+}
+.footer .social_icon ul li:first-child a {
+  margin-left: 0;
+}
+
+.footer .social_icon ul li a:hover {
+  color: white;
+  background-color: #f69165;
+}
+.footer .footer_copyright {
+  margin-top: 80px;
+  background-color: #161616;
+  color: #727272;
+}
+.footer .footer_copyright p {
+  font-size: 12px;
+  font-weight: 500;
+}
+.footer .footer_copyright p a {
+  color: #0eafc0;
+  font-weight: bold;
+}
+
+/************************ 12. Arafat Status Bar Section Area  ************************/
+.status-bar {
+  background-color: #f5f5f5;
+}
+.status-icons ul li {
+  padding-right: 10px;
+}
+.status-icon {
+  color: #a0a0a0;
+  transition: all 1s;
+}
+.status-icon:hover {
+  color: #f69267;
+}
+.department {
+  color: #a0a0a0;
+  border-right: 1px solid lightgray;
+}
+
+.our-doctors {
+  color: #a0a0a0;
+  border-right: 1px solid lightgray;
+}
+.search {
+  border-right: 1px solid lightgray;
+}
+.search input {
+  background-color: transparent;
+  outline: none;
+  border: none;
+}
+.search input::placeholder {
+  color: #a0a0a0;
+}
+.department a,
+.our-doctors a,
+.search a {
+  color: #f69267;
+}
+
+/************************ 13. Arafat Drop Down Nav Section Area ************************/
+.drop-down-menu {
+  background-color: #00cce1;
+}
+.drop-down-menu .dd-menu-bar {
+  text-align: center;
+  display: none;
+}
+.drop-down-menu #dd-close {
+  display: none;
+}
+.drop-down-menu .nav-items ul li {
+  color: white;
+  padding: 5px 10px 5px 0;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: bold;
+  position: relative;
+}
+.drop-down-menu .nav-items ul li a {
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 1s;
+}
+.drop-down-menu .nav-items ul li a:hover {
+  color: #f69165 !important;
+}
+.drop-down-menu .dd-menu-bar a {
+  color: white;
+  font-size: 20px;
+}
+.cart {
+  position: relative;
+  font-size: 14px;
+}
+.cart a {
+  color: white;
+}
+.notification {
+  position: absolute;
+  bottom: 55%;
+  left: 64px;
+}
+.notification a {
+  background-color: #f69267;
+  font-size: 10px;
+}
+.drop-down-menu .parallelogram {
+  transform: skew(170deg);
+  background: #f69267;
+}
+
+.drop-down-menu .appointment {
+  font-size: 14px;
+  font-weight: bold;
+  color: white;
+  font-style: normal;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+.drop-down-menu .appointment:hover {
+  text-decoration: none;
+  cursor: pointer;
+  color: black !important;
+}
+.nav-items ul ul {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 2;
+  background: #00cce1;
+}
+.nav-items ul ul li a {
+  color: white;
+}
+
+/************************ 14. Arafat Header Section Area ************************/
+.header-section {
+  background: url("images/background.png");
+  position: relative;
+  height: 50vh;
+  z-index: 1;
+}
+.header-section::after {
+  content: "";
+  display: block;
+  clear: both;
+  background: url("images/doctor_error.png");
+  background-repeat: no-repeat;
+  background-position: center top;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+}
+.header-section .error-message {
+  color: #f69267;
+}
+.header-section .error-message {
+  color: #f69267;
+}
+.header-section .current-location {
+  color: #555555;
+}
+.header-section .current-location p {
+  padding-right: 10px;
+}
+.header-section .current-location li a {
+  color: #959595;
+  padding: 0 5px;
+}
+.header-section .current-location li .active-link {
+  color: #f69267;
+}
+.header-section .current-location .mini {
+  font-size: 8px;
+  padding: 3px;
+}
+
+/************************ 15. Nurunnabi Not Found Section Area ************************/
+.teeth_44 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  left: 40%;
+  margin-top: 50px;
+}
+.teeth_44 img {
+  height: 100px;
+  padding: 5px 5px;
+}
+._four {
+  font-size: 100px;
+  color: #0bd3e8;
+  font-weight: bold;
+}
+.not_found {
+  text-transform: capitalize;
+  color: black;
+  text-align: center;
+  padding-top: 20px;
+  font-family: "Roboto", sans-serif;
+}
+.go_back {
+  padding-top: 10px;
+  color: #f88a5a;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+}
+.go_back_area {
+  margin-bottom: 100px;
+}
+.go_back {
+  text-align: center;
+}
+
+/************************ 16. Arafat Search Section Area ************************/
+.search-section {
+  background-color: #f5f5f5;
+  min-height: 30vh;
+}
+.search-section .search-input {
+  background-color: white;
+  max-width: 400px;
+  width: 80%;
+  padding: 10px 20px;
+}
+.search-section .search-input a {
+  color: #00cce1;
+}
+.search-section input {
+  background: none;
+  border: none;
+  outline: none;
+  width: 90%;
+}
+
+.search-section input::placeholder {
+  color: #959595;
+}
+
+/************************ 17. Mobile Resonsive Design ************************/
+@media all and (max-width: 500px) {
+  .text-box {
+    padding-top: 40px;
+    text-align: center;
+  }
+
+  .social_area {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .social_text {
+    margin-bottom: 20px;
+  }
+  .social_icon {
+    padding: 0;
+    margin: 0;
+  }
+  .header-slider-right {
+    display: none !important;
+  }
+  .header-slider-left {
+    display: block;
+    width: 100%;
+    padding: 20px !important;
+  }
+}
+
+@media all and (max-width: 768px) {
+  .notification {
+    bottom: 65%;
+  }
+  .menu-items {
+    display: none;
+  }
+  .menu-items ul li {
+    padding-top: 8px;
+    padding-bottom: 8px;
+  }
+  .menu-cta,
+  .dd-menu-cta {
+    display: none;
+    max-height: 80px;
+    padding: 10px 16px !important;
+    margin-top: 8px !important;
+    margin-bottom: 16px !important;
+  }
+  .parallelogram {
+    transform: none !important;
+    margin-bottom: 10px;
+  }
+  .menu-bar {
+    display: block !important;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .menu-items .list-inline-item {
+    display: block !important;
+  }
+  .menu-hidden {
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+  }
+  .status-icons,
+  .department,
+  .our-doctors,
+  .search {
+    border: 0;
+  }
+  .logo {
+    width: 120px;
+  }
+  .top-nav .icon {
+    font-size: 20px;
+  }
+  .top-nav .big {
+    font-size: 12px;
+  }
+  .top-nav .small-text {
+    font-size: 10px;
+  }
+  .nav-items ul li {
+    display: block;
+    margin-top: 8px;
+    margin-bottom: 8px;
+  }
+  .nav-items ul ul {
+    position: inherit !important;
+  }
+  .nav-items {
+    display: none;
+  }
+  .cart-wrapper {
+    display: none;
+    padding-bottom: 16px;
+  }
+  .dd-menu-cta {
+    display: none;
+    max-height: 80px;
+    padding: 10px 16px !important;
+    transform: none !important;
+    margin-bottom: 10px;
+    max-width: 200px;
+    text-align: center;
+  }
+  .dd-menu-bar {
+    display: block !important;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .header-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+/************************ 18. Tablet Resonsive Design ************************/
+@media all and (min-width: 500px) and (max-width: 990px) {
+  .text-box {
+    padding-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .drop-down-menu .parallelogram {
+    transform: none !important;
+    margin-bottom: 20px;
+    width: 220px;
+    padding: 10px 16px !important;
+  }
+}
+
+/************************ 19. Desktop Resonsive Design ************************/
+@media all and (min-width: 992px) {
+  .status-icons {
+    border-left: 1px solid lightgray;
+    border-right: 1px solid lightgray;
+  }
+  .status-icons ul:first-child {
+    padding-left: 10px;
+  }
+}
+
+@media all and (min-width: 1100px) {
+  .speciality-row {
+    padding-right: 100px;
+  }
+}
